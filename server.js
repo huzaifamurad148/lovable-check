@@ -3,7 +3,10 @@
 const path = require('path');
 const fs = require('fs');
 const express = require('express');
-const A = require('./public/assessment-core.js');
+// Works with either layout: files inside a public/ folder, or all files at the top level.
+const BASE = fs.existsSync(path.join(__dirname, 'public', 'index.html')) ? path.join(__dirname, 'public') : __dirname;
+const ASSET_DIR = fs.existsSync(path.join(BASE, 'assets')) ? path.join(BASE, 'assets') : BASE;
+const A = require(path.join(BASE, 'assessment-core.js'));
 
 // ---------- Config (set these as Railway variables) ----------
 const PORT = process.env.PORT || 3000;
@@ -30,7 +33,7 @@ app.use((req, res, next) => {
 
 // ---------- Page (config values injected once at startup) ----------
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-let pageSource = fs.readFileSync(path.join(__dirname, 'public', 'index.html'), 'utf8');
+let pageSource = fs.readFileSync(path.join(BASE, 'index.html'), 'utf8');
 if (!TERMS_URL) {
   // No terms page configured: drop the footer link rather than show a dead one.
   pageSource = pageSource.replace(/<span style="margin: 0 10px">·<\/span><a href="__TERMS_URL__"[^>]*>Terms<\/a>/, '');
@@ -44,7 +47,17 @@ app.get(['/', '/index.html'], (req, res) => {
   res.setHeader('Cache-Control', 'no-cache');
   res.type('html').send(pageHtml);
 });
-app.use(express.static(path.join(__dirname, 'public'), { index: false, maxAge: '1h' }));
+// Only these files are served, so server code and settings files are never exposed.
+app.get(['/app.js', '/assessment-core.js'], (req, res) => {
+  res.sendFile(path.join(BASE, req.path.slice(1)), { maxAge: '1h' });
+});
+app.get('/assets/:file', (req, res) => {
+  const file = req.params.file;
+  if (!/^[a-z0-9-]+\.(png|jpg|svg)$/.test(file)) return res.status(404).send('Not found');
+  const full = path.join(ASSET_DIR, file);
+  if (!fs.existsSync(full)) return res.status(404).send('Not found');
+  res.sendFile(full, { maxAge: '1d' });
+});
 app.get('/healthz', (req, res) => res.json({ ok: true }));
 
 // ---------- Simple in-memory rate limit: 5 submissions per IP per 10 minutes ----------
