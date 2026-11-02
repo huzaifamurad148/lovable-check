@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Is your Lovable app ready for real users? | TekRevol</title>
+<meta name="description" content="A free 3-minute check that scores your Lovable app on security, data, scale and ownership, and shows what to fix before real users arrive.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="/assets/tekrevol-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#040B18}
+a{color:#C2410C}a:hover{color:#9A3412}
+summary{cursor:pointer;list-style:none}
+summary::-webkit-details-marker{display:none}
+details[open] .faq-plus{transform:rotate(45deg)}
+.faq-plus{transition:transform .2s ease}
+input:focus,button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #F7934A;outline-offset:2px}
+input::placeholder{color:#8A93A8}
+@media (max-width: 640px){
+.m-header{padding:10px 16px!important}
+.m-logo{width:128px!important;height:21px!important}
+.m-navcta{padding:0 16px!important;font-size:12.5px!important;min-height:44px!important;white-space:nowrap}
+.m-hero{padding:40px 20px 64px!important}
+.m-hero-grid{gap:40px!important}
+.m-div{display:none!important}
+.m-cardhead{padding:14px 18px!important}
+.m-card{padding:22px 18px 24px!important}
+.m-sec{padding:72px 20px!important}
+.m-track{padding:14px 12px!important;gap:6px!important;margin-top:36px!important}
+.m-pill{font-size:11px!important;padding:6px 8px!important;gap:6px!important}
+.m-dot{width:10px!important;height:10px!important;border-width:2px!important}
+.m-stat{flex-basis:100%!important;border-right:0!important;border-bottom:1px solid #E4E7EE!important}
+.m-stat:last-child{border-bottom:0!important}
+.m-fig{padding:24px 22px!important}
+.m-quote{font-size:19px!important}
+.m-partners{justify-content:flex-start!important;gap:24px 32px!important;padding:24px 22px!important;margin-top:48px!important}
+.m-plabel{flex-basis:100%}
+.m-cta{padding:48px 20px!important;margin-top:64px!important;border-radius:22px!important}
+}
+</style>
+<style>html{scroll-behavior:smooth}#check{scroll-margin-top:16px}</style>
+</head>
+<body>
+<div style="font-family: 'Geist', system-ui, sans-serif; color: #0E1220; background: #FFFFFF; width: 100%; -webkit-font-smoothing: antialiased">
+
+<!-- NAV -->
+<header class="m-header" style="background: #040B18; padding: 12px 24px; border-bottom: 1px solid #121A2B">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: nowrap; min-height: 54px">
+<a href="https://www.tekrevol.com/" aria-label="TekRevol home" style="display: inline-flex; align-items: center; min-height: 44px"><img src="/assets/tekrevol-logo.png" alt="TekRevol" width="162" height="26" class="m-logo" style="display: block; width: 162px; height: 26px"></a>
+<a href="#check" class="m-navcta" style="display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 0 30px; border-radius: 999px; background: #F47A1F; color: #0B0F1A; font-weight: 700; font-size: 14px; letter-spacing: 0.02em; text-transform: uppercase; text-decoration: none">Start free check</a>
+</div>
+</header>
+
+<!-- SECTION 1: HERO + ASSESSMENT -->
+<section class="m-hero" style="position: relative; overflow: hidden; background-color: #040B18; background-image: linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px); background-size: 56px 56px; background-position: center top; padding: 72px 24px 96px">
+<div aria-hidden="true" style="position: absolute; right: -10%; top: 4%; width: 820px; height: 820px; border-radius: 50%; background: radial-gradient(closest-side, rgba(244,122,31,0.22), rgba(238,56,36,0.06) 45%, rgba(238,56,36,0) 70%); pointer-events: none"></div>
+<div aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: 0; height: 160px; background: linear-gradient(rgba(7,9,15,0), #040B18); pointer-events: none"></div>
+<div class="m-hero-grid" style="position: relative; max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
+
+<div style="flex: 1 1 440px; min-width: 0; padding-top: 16px">
+<div style="display: inline-flex; align-items: center; gap: 10px; padding: 7px 14px 7px 10px; border-radius: 999px; border: 1px solid #263049; background: rgba(14,18,28,0.8)">
+<span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #12B76A; box-shadow: 0 0 0 4px rgba(18,183,106,0.18)"></span>
+<span style="font-family: 'Geist Mono', monospace; font-size: 12.5px; letter-spacing: 0.04em; color: #C9CFDD; text-transform: uppercase">For teams building with Lovable</span>
+</div>
+<h1 style="margin: 26px 0 0; font-size: clamp(40px, 5vw, 66px); line-height: 1.02; font-weight: 700; letter-spacing: -0.045em; color: #FFFFFF">Is your Lovable app ready for <span style="color: #F7934A">real users?</span></h1>
+<p style="margin: 24px 0 0; font-size: 19px; line-height: 1.6; color: #A9B1C4; max-width: 540px">Built a customer portal or internal tool in Lovable? Getting it working was the fast part. Before customers and their data arrive, find out what still needs work.</p>
+
+<div style="margin-top: 32px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; gap: 12px; align-items: flex-start; color: #E3E7F0; font-size: 16px; line-height: 1.5">
+<span aria-hidden="true" style="flex: none; width: 22px; height: 22px; border-radius: 6px; background: rgba(18,183,106,0.14); display: flex; align-items: center; justify-content: center; margin-top: 1px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#32D583" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<span>See your score instantly, before you share any details</span>
+</div>
+<div style="display: flex; gap: 12px; align-items: flex-start; color: #E3E7F0; font-size: 16px; line-height: 1.5">
+<span aria-hidden="true" style="flex: none; width: 22px; height: 22px; border-radius: 6px; background: rgba(18,183,106,0.14); display: flex; align-items: center; justify-content: center; margin-top: 1px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#32D583" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<span>We never scan or test your app. The check uses your answers only.</span>
+</div>
+</div>
+
+<div style="margin-top: 44px; padding-top: 24px; border-top: 1px solid #1A2030; display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: center">
+<span style="display: inline-flex; align-items: center; gap: 10px; color: #E3E7F0; font-size: 14px; font-weight: 600"><span aria-hidden="true" style="color: #FDB022; letter-spacing: 2px; font-size: 15px">★★★★★</span>4.8 on Clutch · 84 reviews</span>
+<span aria-hidden="true" class="m-div" style="width: 1px; height: 18px; background: #2A3142"></span>
+<img src="/assets/lovable-certified.svg" alt="Lovable Certified Partner 2026" width="157" height="53" style="display: block; width: 157px; height: 53px">
+</div>
+</div>
+
+<!-- ASSESSMENT CARD -->
+<div id="check" style="flex: 1 1 540px; min-width: 0; position: relative">
+<div aria-hidden="true" style="position: absolute; inset: -1px; border-radius: 24px; background: linear-gradient(160deg, rgba(244,122,31,0.7), rgba(238,56,36,0.12) 45%, rgba(255,255,255,0.08)); pointer-events: none"></div>
+<div style="position: relative; margin: 1px; background: #FFFFFF; border-radius: 23px; box-shadow: 0 40px 100px -20px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.04); overflow: hidden">
+
+<div class="m-cardhead" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 28px; border-bottom: 1px solid #EDEFF4; background: #FAFBFD">
+<span style="font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #525B70">Production readiness check</span>
+<span style="display: inline-flex; align-items: center; gap: 6px; font-family: 'Geist Mono', monospace; font-size: 12px; color: #067647"><span aria-hidden="true" style="width: 7px; height: 7px; border-radius: 50%; background: #12B76A"></span><span id="assess-status">In progress</span></span>
+</div>
+
+<div class="m-card" id="assess" style="padding: 28px 28px 30px" aria-live="polite"></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECTION 2: WHAT WE CHECK -->
+<section class="m-sec" style="padding: 112px 24px; background: #FFFFFF">
+<div style="max-width: 1240px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; gap: 24px 64px; align-items: flex-end; justify-content: space-between">
+<div style="flex: 1 1 520px; min-width: 0; max-width: 680px">
+<div style="font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #C2410C">01 / What the check looks at</div>
+<h2 style="margin: 16px 0 0; font-size: clamp(32px, 3.6vw, 46px); line-height: 1.08; font-weight: 700; letter-spacing: -0.035em; color: #0E1220">The four areas where fast builds usually fall short</h2>
+</div>
+<p style="flex: 1 1 340px; min-width: 0; max-width: 440px; margin: 0; font-size: 18px; line-height: 1.6; color: #525B70">A prototype only has to work. A live app has to stay safe, stay up and keep improving after launch.</p>
+</div>
+
+<div class="m-track" style="margin-top: 56px; padding: 22px 28px; border-radius: 16px; background: #F6F7FA; border: 1px solid #E8EBF1; display: flex; align-items: center; gap: 14px">
+<span class="m-pill" style="flex: none; display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 10px; background: #FFFFFF; border: 1px solid #E1E5EE; font-family: 'Geist Mono', monospace; font-size: 12.5px; color: #3A4256">Prototype</span>
+<div aria-hidden="true" style="flex: 1 1 auto; height: 2px; background: #D3D8E3"></div>
+<span aria-hidden="true" class="m-dot" style="flex: none; width: 14px; height: 14px; border-radius: 50%; border: 3px solid #F47A1F; background: #FFFFFF; box-sizing: border-box"></span>
+<div aria-hidden="true" style="flex: 1 1 auto; height: 2px; background: #D3D8E3"></div>
+<span aria-hidden="true" class="m-dot" style="flex: none; width: 14px; height: 14px; border-radius: 50%; border: 3px solid #F47A1F; background: #FFFFFF; box-sizing: border-box"></span>
+<div aria-hidden="true" style="flex: 1 1 auto; height: 2px; background: #D3D8E3"></div>
+<span aria-hidden="true" class="m-dot" style="flex: none; width: 14px; height: 14px; border-radius: 50%; border: 3px solid #F47A1F; background: #FFFFFF; box-sizing: border-box"></span>
+<div aria-hidden="true" style="flex: 1 1 auto; height: 2px; background: #D3D8E3"></div>
+<span aria-hidden="true" class="m-dot" style="flex: none; width: 14px; height: 14px; border-radius: 50%; border: 3px solid #F47A1F; background: #FFFFFF; box-sizing: border-box"></span>
+<div aria-hidden="true" style="flex: 1 1 auto; height: 2px; background: #D3D8E3"></div>
+<span class="m-pill" style="flex: none; display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 10px; background: #040B18; font-family: 'Geist Mono', monospace; font-size: 12.5px; color: #FFFFFF"><span aria-hidden="true" style="width: 7px; height: 7px; border-radius: 50%; background: #32D583"></span>Production</span>
+</div>
+
+<div style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 20px">
+<div style="flex: 1 1 250px; min-width: 0; padding: 28px; border: 1px solid #E4E7EE; border-radius: 18px; background: #FFFFFF; display: flex; flex-direction: column">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<div style="width: 46px; height: 46px; border-radius: 12px; background: #FFF1E6; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EA580C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg>
+</div>
+<span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #8A93A8">CHECK 01</span>
+</div>
+<h3 style="margin: 22px 0 0; font-size: 21px; font-weight: 700; letter-spacing: -0.02em; color: #0E1220">Security</h3>
+<p style="margin: 8px 0 0; font-size: 15px; line-height: 1.6; color: #525B70">Who can read or change your data, and whether access rules are actually in place.</p>
+</div>
+<div style="flex: 1 1 250px; min-width: 0; padding: 28px; border: 1px solid #E4E7EE; border-radius: 18px; background: #FFFFFF; display: flex; flex-direction: column">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<div style="width: 46px; height: 46px; border-radius: 12px; background: #FFF1E6; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EA580C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"></ellipse><path d="M4.5 5.5v13c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8v-13"></path><path d="M4.5 12c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8"></path></svg>
+</div>
+<span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #8A93A8">CHECK 02</span>
+</div>
+<h3 style="margin: 22px 0 0; font-size: 21px; font-weight: 700; letter-spacing: -0.02em; color: #0E1220">Data</h3>
+<p style="margin: 8px 0 0; font-size: 15px; line-height: 1.6; color: #525B70">How sensitive your data is, and whether backups and monitoring would catch a problem.</p>
+</div>
+<div style="flex: 1 1 250px; min-width: 0; padding: 28px; border: 1px solid #E4E7EE; border-radius: 18px; background: #FFFFFF; display: flex; flex-direction: column">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<div style="width: 46px; height: 46px; border-radius: 12px; background: #FFF1E6; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EA580C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16"></path><path d="M7 15v-3"></path><path d="M12 15V8"></path><path d="M17 15V4"></path></svg>
+</div>
+<span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #8A93A8">CHECK 03</span>
+</div>
+<h3 style="margin: 22px 0 0; font-size: 21px; font-weight: 700; letter-spacing: -0.02em; color: #0E1220">Scale</h3>
+<p style="margin: 8px 0 0; font-size: 15px; line-height: 1.6; color: #525B70">How many users you expect, and how many other systems the app has to talk to.</p>
+</div>
+<div style="flex: 1 1 250px; min-width: 0; padding: 28px; border: 1px solid #E4E7EE; border-radius: 18px; background: #FFFFFF; display: flex; flex-direction: column">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<div style="width: 46px; height: 46px; border-radius: 12px; background: #FFF1E6; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EA580C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 20c.8-3.5 3.6-5.5 7-5.5s6.2 2 7 5.5"></path></svg>
+</div>
+<span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #8A93A8">CHECK 04</span>
+</div>
+<h3 style="margin: 22px 0 0; font-size: 21px; font-weight: 700; letter-spacing: -0.02em; color: #0E1220">Ownership</h3>
+<p style="margin: 8px 0 0; font-size: 15px; line-height: 1.6; color: #525B70">Who keeps the app running, fixed and updated once real people depend on it.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECTION 3: HOW IT WORKS + SAMPLE REPORT -->
+<section class="m-sec" style="padding: 112px 24px; background: #F6F7FA; border-top: 1px solid #ECEEF3; border-bottom: 1px solid #ECEEF3">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
+<div style="flex: 1 1 440px; min-width: 0">
+<div style="font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #C2410C">02 / How it works</div>
+<h2 style="margin: 16px 0 0; font-size: clamp(32px, 3.6vw, 46px); line-height: 1.08; font-weight: 700; letter-spacing: -0.035em; color: #0E1220">A clear answer in about 3 minutes</h2>
+<div style="margin-top: 40px; display: flex; flex-direction: column">
+<div style="display: flex; gap: 20px">
+<div style="display: flex; flex-direction: column; align-items: center; flex: none">
+<div style="width: 40px; height: 40px; border-radius: 12px; background: #040B18; color: #FFFFFF; font-family: 'Geist Mono', monospace; font-weight: 600; font-size: 14px; display: flex; align-items: center; justify-content: center">01</div>
+<div aria-hidden="true" style="width: 2px; flex: 1 1 auto; min-height: 24px; background: #D3D8E3"></div>
+</div>
+<div style="padding-bottom: 28px">
+<h3 style="margin: 8px 0 0; font-size: 19px; font-weight: 700; letter-spacing: -0.01em; color: #0E1220">Answer 9 questions</h3>
+<p style="margin: 6px 0 0; font-size: 15px; line-height: 1.6; color: #525B70">Click the option that fits. No typing until the very end.</p>
+</div>
+</div>
+<div style="display: flex; gap: 20px">
+<div style="display: flex; flex-direction: column; align-items: center; flex: none">
+<div style="width: 40px; height: 40px; border-radius: 12px; background: #040B18; color: #FFFFFF; font-family: 'Geist Mono', monospace; font-weight: 600; font-size: 14px; display: flex; align-items: center; justify-content: center">02</div>
+<div aria-hidden="true" style="width: 2px; flex: 1 1 auto; min-height: 24px; background: #D3D8E3"></div>
+</div>
+<div style="padding-bottom: 28px">
+<h3 style="margin: 8px 0 0; font-size: 19px; font-weight: 700; letter-spacing: -0.01em; color: #0E1220">See your score</h3>
+<p style="margin: 6px 0 0; font-size: 15px; line-height: 1.6; color: #525B70">An overall score plus a breakdown by area, shown on screen right away.</p>
+</div>
+</div>
+<div style="display: flex; gap: 20px">
+<div style="display: flex; flex-direction: column; align-items: center; flex: none">
+<div style="width: 40px; height: 40px; border-radius: 12px; background: #040B18; color: #FFFFFF; font-family: 'Geist Mono', monospace; font-weight: 600; font-size: 14px; display: flex; align-items: center; justify-content: center">03</div>
+<div aria-hidden="true" style="width: 2px; flex: 1 1 auto; min-height: 24px; background: #D3D8E3"></div>
+</div>
+<div style="padding-bottom: 28px">
+<h3 style="margin: 8px 0 0; font-size: 19px; font-weight: 700; letter-spacing: -0.01em; color: #0E1220">Get the full report</h3>
+<p style="margin: 6px 0 0; font-size: 15px; line-height: 1.6; color: #525B70">Every fix in priority order, with why it matters, sent to your inbox.</p>
+</div>
+</div>
+<div style="display: flex; gap: 20px">
+<div style="display: flex; flex-direction: column; align-items: center; flex: none">
+<div style="width: 40px; height: 40px; border-radius: 12px; background: #FFFFFF; border: 2px dashed #9AA3B8; box-sizing: border-box; color: #3A4256; font-family: 'Geist Mono', monospace; font-weight: 600; font-size: 14px; display: flex; align-items: center; justify-content: center">04</div>
+</div>
+<div>
+<h3 style="margin: 8px 0 0; font-size: 19px; font-weight: 700; letter-spacing: -0.01em; color: #0E1220">Talk it through (optional)</h3>
+<p style="margin: 6px 0 0; font-size: 15px; line-height: 1.6; color: #525B70">Book 30 minutes with a TekRevol engineer if you want a second opinion.</p>
+</div>
+</div>
+</div>
+<a href="#check" style="margin-top: 36px; display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: 12px; background: #040B18; color: #FFFFFF; font-weight: 700; font-size: 16px; text-decoration: none">Start the free check
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
+</a>
+</div>
+
+<!-- SAMPLE REPORT -->
+<div style="flex: 1 1 460px; min-width: 0; position: relative">
+<div style="background: #FFFFFF; border-radius: 22px; border: 1px solid #E4E7EE; box-shadow: 0 30px 70px -30px rgba(14,18,32,0.35); overflow: hidden">
+<div style="padding: 16px 24px; border-bottom: 1px solid #EDEFF4; display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #525B70">Readiness report</span>
+<span style="font-family: 'Geist Mono', monospace; font-size: 11.5px; padding: 4px 9px; border-radius: 6px; background: #F1F3F7; color: #3A4256">SAMPLE</span>
+</div>
+<div style="padding: 26px 24px">
+<div style="display: flex; align-items: center; gap: 22px; flex-wrap: wrap">
+<div style="width: 112px; height: 112px; border-radius: 50%; background: conic-gradient(#F79009 0 58%, #EDEFF4 58% 100%); display: flex; align-items: center; justify-content: center; flex: none">
+<div style="width: 90px; height: 90px; border-radius: 50%; background: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center">
+<div style="font-size: 32px; font-weight: 750; letter-spacing: -0.04em; line-height: 1; color: #0E1220">58</div>
+<div style="font-family: 'Geist Mono', monospace; font-size: 10px; color: #525B70; margin-top: 3px">OF 100</div>
+</div>
+</div>
+<div style="flex: 1 1 180px; min-width: 0">
+<span style="display: inline-block; padding: 6px 11px; border-radius: 8px; font-size: 14px; font-weight: 700; background: #FFFAEB; color: #93370D">Needs hardening</span>
+<p style="margin: 10px 0 0; font-size: 14px; line-height: 1.55; color: #3A4256">The app works, but a few gaps should be closed before real users and data arrive.</p>
+</div>
+</div>
+<div style="margin-top: 22px; display: flex; flex-direction: column; gap: 12px">
+<div>
+<div style="display: flex; justify-content: space-between; font-size: 13.5px; font-weight: 600; color: #0E1220"><span>Security</span><span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #525B70">At risk · 30/100</span></div>
+<div style="margin-top: 6px; height: 6px; border-radius: 99px; background: #EDEFF4; overflow: hidden"><div style="height: 100%; width: 30%; border-radius: 99px; background: #F04438"></div></div>
+</div>
+<div>
+<div style="display: flex; justify-content: space-between; font-size: 13.5px; font-weight: 600; color: #0E1220"><span>Data</span><span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #525B70">Needs work · 55/100</span></div>
+<div style="margin-top: 6px; height: 6px; border-radius: 99px; background: #EDEFF4; overflow: hidden"><div style="height: 100%; width: 55%; border-radius: 99px; background: #F79009"></div></div>
+</div>
+<div>
+<div style="display: flex; justify-content: space-between; font-size: 13.5px; font-weight: 600; color: #0E1220"><span>Scale</span><span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #525B70">Strong · 85/100</span></div>
+<div style="margin-top: 6px; height: 6px; border-radius: 99px; background: #EDEFF4; overflow: hidden"><div style="height: 100%; width: 85%; border-radius: 99px; background: #12B76A"></div></div>
+</div>
+<div>
+<div style="display: flex; justify-content: space-between; font-size: 13.5px; font-weight: 600; color: #0E1220"><span>Ownership</span><span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #525B70">Needs work · 60/100</span></div>
+<div style="margin-top: 6px; height: 6px; border-radius: 99px; background: #EDEFF4; overflow: hidden"><div style="height: 100%; width: 60%; border-radius: 99px; background: #F79009"></div></div>
+</div>
+</div>
+<div style="margin-top: 22px; padding-top: 16px; border-top: 1px solid #EDEFF4">
+<div style="font-family: 'Geist Mono', monospace; font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: #525B70">Priority fixes</div>
+<div style="margin-top: 10px; display: flex; gap: 12px; align-items: flex-start; padding: 10px 0">
+<span style="flex: none; font-family: 'Geist Mono', monospace; font-size: 11px; font-weight: 600; padding: 3px 7px; border-radius: 6px; background: #FEF3F2; color: #B42318">HIGH</span>
+<span style="font-size: 14px; line-height: 1.45; color: #0E1220">Lock down who can read and change sensitive data</span>
+</div>
+<div style="display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-top: 1px solid #F0F2F6">
+<span style="flex: none; font-family: 'Geist Mono', monospace; font-size: 11px; font-weight: 600; padding: 3px 7px; border-radius: 6px; background: #FFFAEB; color: #93370D">MED</span>
+<span style="font-size: 14px; line-height: 1.45; color: #0E1220">Set up backups and error monitoring</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECTION 4: PROOF -->
+<section class="m-sec" style="padding: 112px 24px; background: #FFFFFF">
+<div style="max-width: 1240px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
+<div style="flex: 1 1 440px; min-width: 0">
+<div style="font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #C2410C">03 / Why TekRevol</div>
+<h2 style="margin: 16px 0 0; font-size: clamp(32px, 3.6vw, 46px); line-height: 1.08; font-weight: 700; letter-spacing: -0.035em; color: #0E1220">We take apps past the prototype</h2>
+<p style="margin: 18px 0 0; font-size: 18px; line-height: 1.6; color: #525B70">TekRevol has built and maintained custom software since 2018, with a team of 250+ across Houston, Austin, Washington DC, London and Dubai.</p>
+<div style="margin-top: 36px; display: flex; flex-wrap: wrap; border: 1px solid #E4E7EE; border-radius: 18px; overflow: hidden">
+<div class="m-stat" style="flex: 1 1 140px; min-width: 0; padding: 22px 22px 24px; border-right: 1px solid #E4E7EE">
+<div style="font-size: 38px; font-weight: 700; letter-spacing: -0.04em; color: #0E1220; line-height: 1">4.8<span style="font-size: 18px; color: #8A93A8; font-weight: 600">/5</span></div>
+<div style="margin-top: 10px; font-size: 14px; color: #525B70">Clutch rating, 84 reviews</div>
+</div>
+<div class="m-stat" style="flex: 1 1 140px; min-width: 0; padding: 22px 22px 24px; border-right: 1px solid #E4E7EE">
+<div style="font-size: 38px; font-weight: 700; letter-spacing: -0.04em; color: #0E1220; line-height: 1">250+</div>
+<div style="margin-top: 10px; font-size: 14px; color: #525B70">People on the team</div>
+</div>
+<div class="m-stat" style="flex: 1 1 140px; min-width: 0; padding: 22px 22px 24px">
+<div style="font-size: 38px; font-weight: 700; letter-spacing: -0.04em; color: #0E1220; line-height: 1">6 hrs</div>
+<div style="margin-top: 10px; font-size: 14px; color: #525B70">Longest wait for a reply</div>
+</div>
+</div>
+<div style="margin-top: 28px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; gap: 12px; align-items: center; font-size: 16px; color: #0E1220; font-weight: 500">
+<span aria-hidden="true" style="flex: none; width: 26px; height: 26px; border-radius: 8px; background: #ECFDF3; display: flex; align-items: center; justify-content: center"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#067647" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<span>You own the code and IP, always</span>
+</div>
+<div style="display: flex; gap: 12px; align-items: center; font-size: 16px; color: #0E1220; font-weight: 500">
+<span aria-hidden="true" style="flex: none; width: 26px; height: 26px; border-radius: 8px; background: #ECFDF3; display: flex; align-items: center; justify-content: center"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#067647" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<span>We sign an NDA before you share project details</span>
+</div>
+</div>
+</div>
+
+<div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+<figure class="m-fig" style="margin: 0; padding: 34px; border-radius: 22px; background-color: #040B18; background-image: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px); background-size: 32px 32px; color: #FFFFFF">
+<div aria-hidden="true" style="color: #FDB022; letter-spacing: 3px; font-size: 16px">★★★★★</div>
+<blockquote class="m-quote" style="margin: 16px 0 0; font-size: 23px; line-height: 1.45; font-weight: 600; letter-spacing: -0.015em">“I highly recommend Tekrevol. After looking seriously at about eight different companies, we chose to go with Tekrevol to build out our app for both iOS and Android devices.”</blockquote>
+<figcaption style="margin-top: 24px; display: flex; gap: 14px; align-items: center"><img src="/assets/ciaran-doherty.jpg" alt="Ciaran Doherty" width="44" height="44" style="flex: 0 0 auto; display: block; width: 44px; height: 44px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 2px rgba(247,147,74,0.5)"><span style="font-size: 14.5px; line-height: 1.5; color: rgb(169, 177, 196)"><strong style="color: rgb(255, 255, 255); font-weight: 600">Ciaran Doherty</strong><br>Director, CCGC</span></figcaption>
+</figure>
+<figure class="m-fig" style="margin: 0; padding: 30px 34px; border-radius: 22px; background: #F6F7FA; border: 1px solid #E8EBF1">
+<div aria-hidden="true" style="color: #F79009; letter-spacing: 3px; font-size: 15px">★★★★★</div>
+<blockquote style="margin: 14px 0 0; font-size: 19px; line-height: 1.5; font-weight: 600; color: #0E1220; letter-spacing: -0.01em">“The TekRevol team not only got my vision but also showed a genuine passion for creating apps that improve lives. Throughout the development process, they were receptive to my suggestions and also proactive in providing valuable feedback.”</blockquote>
+<figcaption style="margin-top: 20px; display: flex; gap: 14px; align-items: center">
+<img src="/assets/jr-rich.jpg" alt="J R Rich" width="40" height="40" style="flex: none; display: block; width: 40px; height: 40px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 2px rgba(244,122,31,0.35)">
+<span style="font-size: 14.5px; line-height: 1.5; color: #525B70"><strong style="color: #0E1220; font-weight: 600">J R Rich</strong><br>Founder, Guardian Angel</span>
+</figcaption>
+</figure>
+<a href="https://clutch.co/profile/tekrevol" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600">Read all 84 reviews on Clutch
+<svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg>
+</a>
+</div>
+</div>
+
+<div class="m-partners" style="margin-top: 72px; padding: 28px 32px; border-radius: 18px; border: 1px solid #E4E7EE; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px 36px">
+<span class="m-plabel" style="font-family: 'Geist Mono', monospace; font-size: 12.5px; letter-spacing: 0.06em; text-transform: uppercase; color: #525B70">Partnerships</span>
+<img src="/assets/logo-lovable.svg" alt="Lovable" width="134" height="28" style="display: block; width: 134px; height: 28px">
+<img src="/assets/logo-aws.svg" alt="AWS" width="64" height="39" style="display: block; width: 64px; height: 39px">
+<img src="/assets/logo-azure.svg" alt="Microsoft Azure" width="197" height="28" style="display: block; width: 197px; height: 28px">
+<img src="/assets/logo-openai.svg" alt="OpenAI" width="118" height="28" style="display: block; width: 118px; height: 28px">
+<img src="/assets/logo-anthropic.svg" alt="Anthropic" width="153" height="28" style="display: block; width: 153px; height: 28px">
+</div>
+</div>
+</section>
+
+<!-- SECTION 5: FAQ + FINAL CTA -->
+<section class="m-sec" style="padding: 112px 24px; background: #F6F7FA; border-top: 1px solid #ECEEF3">
+<div style="max-width: 1240px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; gap: 40px 64px; align-items: flex-start">
+<div style="flex: 1 1 320px; min-width: 0; max-width: 420px">
+<div style="font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #C2410C">04 / FAQ</div>
+<h2 style="margin: 16px 0 0; font-size: clamp(32px, 3.6vw, 46px); line-height: 1.08; font-weight: 700; letter-spacing: -0.035em; color: #0E1220">Questions before you start</h2>
+</div>
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<details style="background: #FFFFFF; border: 1px solid #E4E7EE; border-radius: 16px; padding: 22px 24px">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 17px; font-weight: 650; color: #0E1220">Do you access or scan my app?<svg class="faq-plus" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#525B70" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></summary>
+<p style="margin: 12px 0 0; font-size: 15px; line-height: 1.65; color: #525B70">No. The check works from your answers only. We never test anyone's app without permission.</p>
+</details>
+<details style="background: #FFFFFF; border: 1px solid #E4E7EE; border-radius: 16px; padding: 22px 24px">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 17px; font-weight: 650; color: #0E1220">Is it really free?<svg class="faq-plus" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#525B70" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></summary>
+<p style="margin: 12px 0 0; font-size: 15px; line-height: 1.65; color: #525B70">Yes. You see your score without giving any details. The full report only needs your email.</p>
+</details>
+<details style="background: #FFFFFF; border: 1px solid #E4E7EE; border-radius: 16px; padding: 22px 24px">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 17px; font-weight: 650; color: #0E1220">My app is still a test. Is this too early?<svg class="faq-plus" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#525B70" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></summary>
+<p style="margin: 12px 0 0; font-size: 15px; line-height: 1.65; color: #525B70">Earlier is better. Most fixes cost less before real users and data are involved.</p>
+</details>
+<details style="background: #FFFFFF; border: 1px solid #E4E7EE; border-radius: 16px; padding: 22px 24px">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 17px; font-weight: 650; color: #0E1220">What happens to my answers?<svg class="faq-plus" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#525B70" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></summary>
+<p style="margin: 12px 0 0; font-size: 15px; line-height: 1.65; color: #525B70">We use them to prepare your report. If you book a review, the engineer reads them first so the call starts with context. Our <a href="__PRIVACY_URL__">privacy policy</a> covers the details.</p>
+</details>
+</div>
+</div>
+
+<div class="m-cta" style="margin-top: 96px; position: relative; overflow: hidden; padding: 72px 32px; border-radius: 28px; background-color: #040B18; background-image: linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px); background-size: 44px 44px; text-align: center">
+<div aria-hidden="true" style="position: absolute; left: 50%; top: -60%; width: 900px; height: 900px; margin-left: -450px; border-radius: 50%; background: radial-gradient(closest-side, rgba(244,122,31,0.2), rgba(238,56,36,0.05) 45%, rgba(238,56,36,0) 70%); pointer-events: none"></div>
+<div style="position: relative">
+<div style="display: inline-flex; align-items: center; gap: 10px; padding: 7px 14px 7px 10px; border-radius: 999px; border: 1px solid #263049; background: rgba(14,18,28,0.8)">
+<span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #12B76A; box-shadow: 0 0 0 4px rgba(18,183,106,0.18)"></span>
+<span style="font-family: 'Geist Mono', monospace; font-size: 12.5px; letter-spacing: 0.04em; color: #C9CFDD; text-transform: uppercase">Free · About 3 minutes</span>
+</div>
+<h2 style="margin: 24px auto 0; max-width: 760px; font-size: clamp(34px, 4.4vw, 58px); line-height: 1.04; font-weight: 700; letter-spacing: -0.045em; color: #FFFFFF">Find out where your app stands</h2>
+<p style="margin: 18px auto 0; max-width: 520px; font-size: 18px; line-height: 1.6; color: #A9B1C4">Nine questions. Your score on screen. About 3 minutes.</p>
+<a href="#check" style="margin-top: 32px; display: inline-flex; align-items: center; gap: 10px; min-height: 56px; padding: 0 30px; border-radius: 999px; background: #F47A1F; color: #0B0F1A; font-weight: 700; font-size: 17px; text-decoration: none">Start the free check
+<svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<footer style="padding: 32px 24px; background: #040B18; border-top: 1px solid #161B28">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; font-size: 13.5px; color: #9AA3B8">
+<span style="display: inline-flex; align-items: center; gap: 14px"><img src="/assets/tekrevol-logo.png" alt="TekRevol" width="162" height="26" style="display: block; width: 162px; height: 26px"><span>© 2026</span></span>
+<span><a href="__PRIVACY_URL__" style="color: #C3CAD9">Privacy policy</a><span style="margin: 0 10px">·</span><a href="__TERMS_URL__" style="color: #C3CAD9">Terms</a></span>
+</div>
+</footer>
+</div>
+<script>window.PAGE_CONFIG={bookingUrl:"__BOOKING_URL__",privacyUrl:"__PRIVACY_URL__"};</script>
+<script src="/assessment-core.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>
